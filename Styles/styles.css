@@ -115,7 +115,7 @@ body {
 .latest-blogs {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     margin-top: -60px;
     height: auto;
     width: 55%;
@@ -208,4 +208,32 @@ body {
     padding: 10px 20px;
 }
 
+.blogslider-container{
+    width: 62%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.blogs {
+    align-self: center;
+}
 
+.carousel {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 380px;
+    height: 400px;
+    background: #666768;
+}
+
+.slider {
+    margin-top: 15px;
+    align-self: center;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+}
