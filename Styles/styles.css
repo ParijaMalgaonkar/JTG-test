@@ -223,6 +223,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    overflow: hidden;
+    position: relative;
 }
 .card{
     width: 380px;
@@ -231,9 +234,38 @@ body {
 }
 
 .pagination {
-    margin-top: 15px;
+    margin-top: 12px;
+    margin-right: 45px;;
     align-self: center;
     width: 50px;
     display: flex;
     justify-content: space-between;
+
+    cursor: pointer;
 }
+
+.gallery {
+    display: flex;
+    width: 200px;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: o;
+    padding: 0;
+}
+
+.feedImage {
+    width: min-content;
+    height: min-content;
+    margin: -8px;
+    padding: 0;
+}
+
+/* .instagramFeed {
+    margin: 0;
+    padding: 0;
+} */
