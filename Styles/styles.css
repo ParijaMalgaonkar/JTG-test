@@ -398,15 +398,17 @@ body {
 .subscribe-desc {
     align-self: center;
     justify-content: center;
-    width: 50%;
+    align-items: center;
+    width: 43%;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 .subscribe-email {
     display: flex;
     align-self: center;
     margin-top: 10px;
-    margin-right: 40px;
+    margin-right: 35px;
 }
 
 .emailInput {
