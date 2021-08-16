@@ -394,6 +394,10 @@ body {
     padding: 0;
 }
 
+.feedImage:hover {
+    /* background-image: ; */
+}
+
 
 
 /*Subscribe to blogs section*/
@@ -445,3 +449,77 @@ body {
 
 
 /*Footer Section*/
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    width: 62%;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.logoSocials {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 80px; 
+}
+
+.footer-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-desc {
+    font-size: 14px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.socialmedia-logo {
+    display: flex;
+    margin-top: 18px;
+    justify-items: flex-start;
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 13px;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 1px solid #FF5300;
+    color: #FF5300;
+    background: white;
+}
+
+.linkedin{
+    margin-left: 20px;
+}
+
+.instagram {
+    margin-left: 23px;
+}
+
+.pages {
+    display:flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.pageslinks {
+    margin-top: 18px;
+}
