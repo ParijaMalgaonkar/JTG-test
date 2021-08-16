@@ -17,18 +17,124 @@
 
 body {
     width: 100vw;
+    overflow-x: hidden;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    width: 100vw;
+    height: 150px;
+    margin-bottom: -100px;
     background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
-    
+    position: fixed;
+    top: 0;
+    background: rgba(255,255,255,0.1);
+    z-index:2;
+}
+
+
+.logo {
+    margin-left: 100px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-right: 100px;
+    word-spacing: 5px;
 
 }
+
+
+.nav-links li {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:  black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-links li:active a{
+    color: #FF5300;
+}
+.nav-links li:hover a{
+    color: #FF5300;
+}
+.nav-links li:first-child a{
+    color: #FF5300;
+}
+ 
+
+.navbutton {
+    width: 220px;
+    margin-bottom: 9px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #FF5300;;
+    margin: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        top: 10vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
 
 .banner {
     display: flex;
