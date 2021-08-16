@@ -468,10 +468,10 @@ body {
 .logoSocials {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-right: 80px; 
+    /* margin-right: 50px;  */
 }
 
 .footer-title {
@@ -517,9 +517,45 @@ body {
 .pages {
     display:flex;
     flex-direction: column;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 55px;
+    
+}
+
+.pageslinkstop {
+    margin-top: 34px;
 }
 
 .pageslinks {
     margin-top: 18px;
+}
+
+.recentBlogs {
+    display: flex;
+    flex-direction: column;
+    margin-left: -30px;
+}
+
+.partners {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+
+.google {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.apple {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.spotify {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+
 }
