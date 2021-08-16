@@ -10,8 +10,18 @@ const navSlide = () => {
     navLinks.forEach((link, index) => {
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7}s`;
     });
-
-
 }
+
+$(window).scroll (function() {
+    if($(document).scrollTop() >= 50)
+    {
+        $('.navbar').addClass('.background');
+    }
+    else 
+    {
+        $('.navbar').removeClass('.background');
+    }
+}); 
+
 
 navSlide();
