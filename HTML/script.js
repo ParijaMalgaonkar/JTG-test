@@ -62,5 +62,17 @@ console.log("hellooo");
 	span[1].onclick = ()=>{right_mover();}
 	span[0].onclick = ()=>{left_mover();}
 
+	// $('section').keydown(function(e) {
+	// 	if (e.which == '37') {
+	// 		left_mover();
+	// 	}
+	// });
+
+	// $('section').keydown(function(e) {
+	// 	if (e.which == '39') {
+	// 		right_mover();
+	// 	}
+	// });
+
 
 // navSlide();

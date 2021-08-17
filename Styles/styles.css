@@ -17,15 +17,15 @@
 
 body {
     width: 100vw;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    height: 150px;
+    width: 98vw;
+    height: 140px;
     margin-bottom: -100px;
     background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
@@ -243,7 +243,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: -60px;
+    margin-top: -50px;
     height: auto;
     width: 55%;
     background: white;
@@ -254,8 +254,14 @@ body {
 
 .blogHeader {
     display: flex;
-    width: 100%;
+    align-items: flex-start;
+    width: 95%;
     justify-content: space-between;
+}
+
+.blogheaderButton {
+    margin-right: -30px;
+
 }
 
 .blogPosts {
@@ -341,9 +347,10 @@ body {
 
 .blogslider-container{
     width: 62%;
-    margin-top: 80px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
+    position: relative;
 
 }
 
@@ -353,25 +360,12 @@ body {
 }
 
 .blogs {
+    margin-top: 5px;
     align-self: center;
+    padding-right: 5px;
 }
 
-.carousel {
-    margin-top: 40px;
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: black;
-    overflow-x: hidden;
 
-
-
-    /* position: relative; */
-    /* transition: 0.3s; */
-}
 .card{
     width: 380px;
     height: 400px;
@@ -379,8 +373,8 @@ body {
 }
 
 .pagination {
-    margin-top: 45px;
-    margin-right: 40px;
+    margin-top: 11px;
+    /* margin-right: 8px; */
     align-self: center;
     width: 100px;
     display: flex;
@@ -396,8 +390,6 @@ body {
     }
 }
 
-/*---------*/
-
 .rightA, .leftA {
     font-size: 40px;
     margin: 0 5px;
@@ -412,7 +404,7 @@ body {
     width: 98%;
     height: 410px;
     /*background: red;*/
-    margin-top: 40px ;
+    margin-top: 35px ;
     display: flex;
     /* align-items: center; */
     overflow-x: auto;
@@ -425,7 +417,7 @@ body {
     min-width: 370px;
     height: 400px;
     background: white;
-    margin:  0 20px  0 0;
+    margin:  0 29px  0 0;
     border-radius: 5px;
     position: relative;
     left: 0;
@@ -482,14 +474,13 @@ body {
     margin-top: 31px;
     border-radius: 2px;
     color: #FF5300;
-
 }
 
 
 /*Instagram Feed section*/
 
 .instagramFeed {
-    margin-top: 95px;
+    margin-top: 80px;
 }
 
 .gallery {
@@ -526,6 +517,7 @@ body {
 }
 
 .subscribe-title {
+    margin-top: 0;
     text-decoration: underline;
 }
 
@@ -557,6 +549,8 @@ body {
     width: 145px;
     height: 60px;
     cursor: pointer;
+    font-size: 14px;
+    padding-top: -5px;
 }
 
 
