@@ -424,7 +424,7 @@ body {
 .card{
     min-width: 370px;
     height: 400px;
-    background: whitesmoke;
+    background: white;
     margin:  0 20px  0 0;
     border-radius: 5px;
     position: relative;
@@ -435,7 +435,7 @@ body {
 
 .author-details {
     margin-top: 43px;
-    border-left: 4px solid black;
+    border-left: 4px solid #FF5300;
 }
 
 .name_date {
@@ -443,12 +443,14 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-left: 38px;
+    margin-left: 38px;
     width: 80%;
+    color:#B2B2B2;
 }
 
 .author_name {
     font-size: 15px;
+    color: #FF5300;
 }
 
 .date {
@@ -457,20 +459,30 @@ body {
 
 .carousel_title {
     margin-top: 10px;
-    padding-left: 38px;
+    margin-left: 38px;
     width: 85%;
 }
 
 .carousel_desc {
     margin-top: 30px;
-    padding-left: 39px;
+    margin-left: 39px;
     font-size:15px;
     color: #9A9A9A;
     line-height: 1.5;
 }
 
 .read_more {
-    
+    margin-left: 39px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #FF5300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 31px;
+    border-radius: 2px;
+    color: #FF5300;
+
 }
 
 
