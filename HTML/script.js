@@ -122,5 +122,9 @@ slider.addEventListener('mousemove', (e) => {
 });
 
 
+function ShowMoreBlogs() {
+	var hiddenblog = document.getElementsByClassName("hiddenblog");
+	hiddenblog.classList.remove('hide');
+}
 
 navSlide();

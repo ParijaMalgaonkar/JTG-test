@@ -16,10 +16,12 @@
     <body >
 
         <nav class="unresponsive" id="navbar">
-            <div class="logo">
-                <img src="../Assets/Mic.png" />
-                <img src="../Assets/JTGPOD-Logo.png" />
-            </div>
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="../Assets/Mic.png" />
+                    <img src="../Assets/JTGPOD-Logo.png" />
+                </div>
+            </a>
             <div id="navlinks" class="nav-links">
                 <li id="home">
                     <a  href="./index.html">Home</a>
@@ -77,8 +79,11 @@
                     <div class="post">
                         <div class="postImage">
                             <img src="../Assets/Post1.png" />
-
+                            <div class="newtag">
+                                <img class="newTag_image" src="../Assets/newTag.png" alt="New Tag" />
+                            </div>
                         </div>
+                       
                         <div class="postText">
                             <h1 class="postHeading" >Visiting my best friend's city for first time</h1>
                             <p class="postDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -98,7 +103,9 @@
                     <div class="post">
                         <div class="postImage">
                             <img src="../Assets/Post2.png" />
-
+                            <div class="newtag hide">
+                                <img class="newTag_image" src="../Assets/newTag.png" alt="New Tag" />
+                            </div>
                         </div>
                         <div class="postText">
                             <h1 class="postHeading" >Visiting my best friend's city for first time</h1>
@@ -119,7 +126,9 @@
                     <div class="post">
                         <div class="postImage">
                             <img src="../Assets/Post3.png" />
-
+                            <div class="newtag hide">
+                                <img class="newTag_image" src="../Assets/newTag.png" alt="New Tag" />
+                            </div>
                         </div>
                         <div class="postText">
                             <h1 class="postHeading" >Visiting my best friend's city for first time</h1>
@@ -136,10 +145,10 @@
                         </div>
                     </div>
 
-                    <div class="post hide">
+                    <div class="hiddenblog post hide ">
                         <div class="postImage">
                             <img src="../Assets/Post3.png" />
-
+                            
                         </div>
                         <div class="postText">
                             <h1 class="postHeading" >Visiting my best friend's city for first time</h1>
@@ -156,7 +165,7 @@
                         </div>
                     </div>
 
-                    <div class="post hide">
+                    <div class="hiddenblog post hide ">
                         <div class="postImage">
                             <img src="../Assets/Post3.png" />
 
@@ -176,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="explore-button showMore">Show More Episode</button>
+                <button onclick="ShowMoreBlogs()" class="explore-button showMore">Show More Episode</button>
             </div>
             <div class="blogslider-container">
                 <h1 class="blogs">
@@ -385,7 +394,7 @@
             </div>
 
             <div class="blogslider-container  subscribe-container">
-                <h1 class="blogs subscribe-title">New Blog Every Week !</h1>
+                <h1 class="blogs subscribe-title">New Blog Every Week!</h1>
                 <p class="postDesc subscribe-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem necessitatibus neque sunt dignissimos aliquid quam fugiat.</p>
                 <div class="subscribe-email">
                     <input type="email" placeholder="Type Your Email" class="emailInput"/>
@@ -418,7 +427,7 @@
                             <h3 class="titlefooter">Pages</h3>
                         </div>
                         <div class="links">
-                            <p class="pageslinkstop">About</p>
+                            <p class="pageslinks">About</p>
                             <p class="pageslinks">Episode</p>
                             <p class="pageslinks">Blog</p>
                             <p class="pageslinks">Contact</p>
@@ -430,7 +439,7 @@
                             <h3 class="titlefooter">Recent Blogs</h3>
                         </div>
                         <div class="links">
-                            <p class="pageslinkstop">Blog 1</p>
+                            <p class="pageslinks">Blog 1</p>
                             <p class="pageslinks">Blog 2</p>
                             <p class="pageslinks">Blog 3</p>
                             <p class="pageslinks">Blog 4</p>
