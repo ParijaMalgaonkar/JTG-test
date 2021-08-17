@@ -20,14 +20,14 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
+#navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 98vw;
     height: 140px;
     margin-bottom: -100px;
-    background-color: transparent;
+    /* background-color: transparent; */
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     top: 0;
@@ -35,8 +35,8 @@ body {
     z-index:2;
 }
 
-.background {
-    background: red;
+.whiten {
+    background: white;
 }
 
 
@@ -69,16 +69,18 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-links li:active a{
+
+
+.nav-links li:active {
     color: #FF5300;
+    border-bottom: 1px solid #FF5300;
 }
+
+
+
 .nav-links li:hover a{
     color: #FF5300;
 }
-.nav-links li:first-child a{
-    color: #FF5300;
-}
- 
 
 .navbutton {
     width: 220px;
@@ -103,23 +105,27 @@ body {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 50vh;
+        height: 90vh;
         top: 10vh;
         background: white;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        width: 50vw;
+        width: 100vw;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        margin-right: -10px;
+        padding-top: 40px;
     }
     .nav-links li {
-        opacity: 0;
+        opacity: 1;
     }
 
     .hamburger {
         display: block;
     }
+
     
 }
 
@@ -236,6 +242,7 @@ body {
 }
 
 
+
 /*Latest Blogs section*/
 
 
@@ -341,6 +348,12 @@ body {
     padding: 10px 20px;
 }
 
+.showMore:hover {
+    color: white;
+    background: #FF5300;
+    transition: all ease 0.3s;
+}
+
 
 /*Blog Carousel section */
 
@@ -354,10 +367,10 @@ body {
 
 }
 
-.blogslider-wrapper {
+/* .blogslider-wrapper {
 
     /* position: relative; */
-}
+
 
 .blogs {
     margin-top: 5px;
@@ -474,6 +487,13 @@ body {
     margin-top: 31px;
     border-radius: 2px;
     color: #FF5300;
+    background: white;
+}
+
+.read_more:hover {
+    color: white;
+    background: #FF5300;
+    transition: all ease 0.3s;
 }
 
 
@@ -504,6 +524,12 @@ body {
     height: min-content;
     margin: -8px;
     padding: 0;
+    transition: 0.3s;
+}
+
+.feedImage:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 
@@ -629,6 +655,12 @@ body {
     border: 1px solid #FF5300;
     color: #FF5300;
     background: white;
+    cursor: pointer;
+}
+
+.facebook:hover {
+    opacity: 0.5;
+
 }
 
 .linkedin{
@@ -723,4 +755,202 @@ body {
     font-weight: 500;
     color: #B5B5B5;
     margin-bottom: 50px;
+}
+
+/*-------Mobile View-------*/
+
+@media (max-width: 900px) 
+{
+    .banner {
+        flex-direction: column;
+        height: 98vh;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .banner-text {
+        height: 50%;
+        width: 80%;
+        padding: 0px;
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+
+    .banner-image {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .bannerman {
+        position: relative;
+        bottom: 0;
+        /* width: 500; */
+        height: 350px;
+    }
+    
+    .heading {
+        width:90%;
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    
+    .desc{
+        width:85%;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+
+    .latest-blogs {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 0;
+        height: auto;
+        width: 90%;
+        background: white;
+        border-radius: 7px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px;
+    }
+
+    .blogHeader h1 {
+        font-size:20px;
+    }
+
+    .blogHeader {
+        width: 90%;
+        align-items: center;
+    }
+
+    .post {
+        padding: 0;
+        width: 93%;
+        height: auto;
+        /* background: rgb(133, 131, 131); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .postImage {
+        width: 100%;
+    } */
+
+    .postText {
+        width: 80%;
+        text-align: justify;
+    }
+
+    .postHeading {
+        font-size: 20px;
+    }
+
+    .postDesc {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .postButton {
+        align-self: center;
+        width: 100%;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .postHashtag {
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 13px;
+        align-self: center;
+        justify-content: flex-start;
+        margin-left: 17px;
+        color: lightgray;
+    }
+
+    .blogslider-container {
+        width: 85%;
+    }
+
+    .card {
+        min-width: 360px;
+    }
+
+    .gallery {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: 50%;
+    }
+    
+
+    .feedImage {
+        margin: -4px 0px;
+        width: 100%;
+    }
+
+    .subscribe-container {
+        width: 100%;
+    }
+
+    .subscribe-title {
+        font-size: 25px;
+    }
+
+    .subscribe-desc {
+        width: 80%;
+    }
+
+    .subscribe-email {
+        width: 80%;
+    }
+
+    .emailInput {
+        height: 50px;
+    }
+    
+    .subscribe-button {
+        font-size: 12px;
+        height: 50px;
+    }
+
+    .subscribe-arrow {
+        display: none;
+    }
+
+    .footer-content {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logoSocials {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partners {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titlefooter {
+        font-size: 13px;
+        align-self: center;
+        align-items: center;
+    }
 }

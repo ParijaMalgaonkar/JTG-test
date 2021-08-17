@@ -1,29 +1,58 @@
-// const navSlide = () => {
-//     const hamburger = document.querySelector('.hamburger');
-//     const nav = document.querySelector('.nav-links');
-//     const navLinks = document.querySelector('.nav-links li');
 
-//     hamburger.addEventListener('click', ()=> {
-//         nav.classList.toggle('nav-active');
-//     });
+const navSlide = () => {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelector('.nav-links li');
 
-//     navLinks.forEach((link, index) => {
-//         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7}s`;
-//     });
-// }
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    });
 
-console.log("hellooo");
+    navLinks.forEach((link, index) => {
+		if(link.style.animation) {
+			link.style.animation = '';
+		}
+		else {
+			link.style.animation = 'navLinkFade 0.5s ease fowards $(index / 7 + 1.5)s';
+		}
+    });
+}
 
-// $(window).scroll (function() {
-//     if($(document).scrollTop() >= 50)
-//     {
-//         $('.navbar').addClass('.background');
-//     }
-//     else 
-//     {
-//         $('.navbar').removeClass('.background');
-//     }
-// }); 
+function validate(input) {
+
+	console.log("reached here");
+	var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
+	if (input.value.match(validRegex)) {
+  
+	  alert("Valid email address!");
+  
+	  document.form1.text1.focus();
+  
+	  return true;
+  
+	} else {
+  
+	  alert("Invalid email address!");
+  
+	  document.form1.text1.focus();
+  
+	  return false;
+  
+	}
+  
+  }
+
+
+var navbar = document.getElementById("navbar");
+
+window.addEventListener('scroll', (event) => {
+	navbar.classList.add("whiten");
+	if(window.pageYOffset == 0) {
+		navbar.classList.remove("whiten");
+	}
+})
+
 
 
     let span = document.getElementsByTagName('span');
@@ -33,11 +62,11 @@ console.log("hellooo");
     let movePer = 395;
 	let maxMove = 2000;
 	// mobile_view	
-	let mob_view = window.matchMedia("(max-width: 768px)");
+	let mob_view = window.matchMedia("(max-width: 900px)");
 	if (mob_view.matches)
 	 {
-	 	movePer = 50.36;
-	 	maxMove = 504;
+	 	movePer = 385;
+	 	maxMove = 2000;
 	 }
 
 	let right_mover = ()=>{
@@ -62,17 +91,36 @@ console.log("hellooo");
 	span[1].onclick = ()=>{right_mover();}
 	span[0].onclick = ()=>{left_mover();}
 
-	// $('section').keydown(function(e) {
-	// 	if (e.which == '37') {
-	// 		left_mover();
-	// 	}
-	// });
-
-	// $('section').keydown(function(e) {
-	// 	if (e.which == '39') {
-	// 		right_mover();
-	// 	}
-	// });
 
 
-// navSlide();
+const slider = document.querySelector('.section');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});
+
+
+
+navSlide();

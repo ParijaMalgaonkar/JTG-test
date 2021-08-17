@@ -11,30 +11,30 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../Styles/styles.css">
-        <script src="https://kit.fontawesome.com/46a60e8724.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="../Assets/Mic.png" type="image/x-icon">
     </head>
     <body >
 
-        <nav class="navbar">
+        <nav class="unresponsive" id="navbar">
             <div class="logo">
                 <img src="../Assets/Mic.png" />
                 <img src="../Assets/JTGPOD-Logo.png" />
             </div>
-            <div class="nav-links">
-                <li>
-                    <a href="./index.html">Home</a>
+            <div id="navlinks" class="nav-links">
+                <li id="home">
+                    <a  href="./index.html">Home</a>
                 </li>
-                <li>
-                    <a href="../HTML/about.html">About</a>
+                <li id="about">
+                    <a href="./about.html">About</a>
                 </li>
-                <li>
-                    <a href="www.facebook.com">Blog</a>
+                <li id="blog">
+                    <a href="./blog.html">Blog</a>
                 </li>
-                <li>
-                    <a href="www.instagram.com">Pages</a>
+                <li id="pages">
+                    <a href="./pages.html">Pages</a>
                 </li>
-                <li>
-                    <a href="www.linkedin.com">Contact</a>
+                <li id="contact">
+                    <a href="./contact.html">Contact</a>
                 </li>
                 <li>
                     <button class="explore-button navbutton">Subscribe</button>
@@ -42,10 +42,9 @@
                 <div class="navLine"></div>
             </div>
             <div class="hamburger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
             </div>
         </nav>
 
@@ -71,7 +70,7 @@
         <div class="container">
             <div class="latest-blogs">
                 <div class="blogHeader">
-                    <h1>Latest Blogs</h1>
+                    <h1 class="latestblogsTitle">Latest Blogs</h1>
                     <button class="blogheaderButton explore-button">View All</button>
                 </div>
                 <div class="blogPosts">
@@ -361,7 +360,7 @@
             </div>
 
             <div class="blogslider-container instagramFeed">
-                <h1 class="blogs">Instagram Feed</h1>
+                <h1 class="blogs">Instagram feeds</h1>
                 <div class="gallery">
                     <div class="col">
                         <img src="../Assets/1.png" class="feedImage" />
@@ -389,8 +388,8 @@
                 <h1 class="blogs subscribe-title">New Blog Every Week !</h1>
                 <p class="postDesc subscribe-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem necessitatibus neque sunt dignissimos aliquid quam fugiat.</p>
                 <div class="subscribe-email">
-                    <input type="text" placeholder="Type Your Email" class="emailInput"/>
-                    <button class="subscribe-button explore-button">Subscribe<p class="subscribe-arrow">&#129122;</p></button>
+                    <input type="email" placeholder="Type Your Email" class="emailInput"/>
+                    <button class="subscribe-button explore-button" onclick="validate(`acbnishbghiasjb`)">Subscribe<p class="subscribe-arrow">&#129122;</p></button>
                 </div>
                 
             </div>   
@@ -407,9 +406,9 @@
                         <p class="postDesc footer-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, quaerat officia nulla.</p>
                         <h3 style="margin-top: 8px; color: #393939;">Socials</h3>
                         <div class="socialmedia-logo">
-                            <div class="facebook"><img src="../Assets/facebook.png" /></div>
-                            <div class=" facebook linkedin"><img src="../Assets/linkedin.png" /></div>
-                            <div class=" facebook instagram"><img src="../Assets/instagram.png" /></div>
+                            <a href="https://www.facebook.com/LifeAtJosh/"><div class="facebook"><img src="../Assets/facebook.png" /></div></a>
+                            <a href="https://www.linkedin.com/company/josh-technology-group/"><div class=" facebook linkedin"><img src="../Assets/linkedin.png" /></div></a>
+                            <a href="https://www.instagram.com/explore/locations/1018302459/josh-technology-group/?hl=en"><div class=" facebook instagram"><img src="../Assets/instagram.png" /></div></a>
                         </div>
                     </div>
 
@@ -448,7 +447,6 @@
                             <img class="spotify" src="../Assets/Spotify.png"/>
                         </div>    
                     </div>
-
                 </div>
 
                 <div class="footer-line"></div>
