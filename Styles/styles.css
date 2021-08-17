@@ -17,7 +17,7 @@
 
 body {
     width: 100vw;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .navbar {
@@ -344,7 +344,14 @@ body {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
+
 }
+
+.blogslider-wrapper {
+
+    /* position: relative; */
+}
+
 .blogs {
     align-self: center;
 }
@@ -353,10 +360,17 @@ body {
     margin-top: 40px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+    overflow-x: hidden;
 
-    overflow: hidden;
-    position: relative;
+
+
+    /* position: relative; */
+    /* transition: 0.3s; */
 }
 .card{
     width: 380px;
@@ -365,17 +379,106 @@ body {
 }
 
 .pagination {
-    margin-top: 12px;
-    margin-right: 45px;;
+    margin-top: 45px;
+    margin-right: 40px;
     align-self: center;
-    width: 50px;
+    width: 100px;
     display: flex;
     justify-content: space-between;
 
     cursor: pointer;
 }
 
+
+@media(max-width: 768px) {
+    .carousel {
+        min-width: 30%;
+    }
+}
+
+/*---------*/
+
+.rightA, .leftA {
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #555;
+    width: 30px;
+    height: 30px;
+
+}
+
+.section{
+    width: 98%;
+    height: 410px;
+    /*background: red;*/
+    margin-top: 40px ;
+    display: flex;
+    /* align-items: center; */
+    overflow-x: auto;
+}
+.section::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    min-width: 370px;
+    height: 400px;
+    background: whitesmoke;
+    margin:  0 20px  0 0;
+    border-radius: 5px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+
+
+.author-details {
+    margin-top: 43px;
+    border-left: 4px solid black;
+}
+
+.name_date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 38px;
+    width: 80%;
+}
+
+.author_name {
+    font-size: 15px;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.carousel_title {
+    margin-top: 10px;
+    padding-left: 38px;
+    width: 85%;
+}
+
+.carousel_desc {
+    margin-top: 30px;
+    padding-left: 39px;
+    font-size:15px;
+    color: #9A9A9A;
+    line-height: 1.5;
+}
+
+.read_more {
+    
+}
+
+
 /*Instagram Feed section*/
+
+.instagramFeed {
+    margin-top: 95px;
+}
 
 .gallery {
     display: flex;
@@ -383,6 +486,8 @@ body {
     padding: 0;
     margin-top: 30px;
 }
+
+
 
 .col {
     display: flex;
