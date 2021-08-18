@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JTG Pod</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../Styles/styles.css">
+        <link rel="shortcut icon" href="../Assets/Mic.png" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <button onclick="topFunction()" id="gototop" title="Go to top"><p>&#11165;</p></button>
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="../Assets/Mic.png" />
+                    <img src="../Assets/JTGPOD-Logo.png" />
+                </div>
+            </a>
+            <div id="navlinks" class="nav-links">
+                <li id="home">
+                    <a onclick="activate()" href="./index.html">Home</a>
+                </li>
+                <li id="about">
+                    <a href="./about.html">About</a>
+                </li>
+                <li id="blog">
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li id="pages">
+                    <a href="./pages.html">Pages</a>
+                </li>
+                <li id="contact">
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li>
+                    <button class="explore-button navbutton"
+                        onclick="location.href='#subscribe-container'">Subscribe</button>
+                </li>
+                <div class="navLine"></div>
+            </div>
+
+            <!-- Hamburger Icon for Mobile View -->
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <!-- Banner section with trending blog -->
+        <div class="banner">
+            <div class="banner-text">
+                <div class="trendingblog">
+                    <div class="line"></div>
+                    <h3 class="trendingblog-text">Trending Blog</h3>
+                </div>
+                <h1 class="heading">Dreams of an unique ideas scattered through
+                    a deserted.</h1>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil error modi repellendus consequuntur.
+                    Nobis ullam consectetur, consequatur dolores voluptate iure
+                    natus.
+                </p>
+                <button class="explore-button">Explore</button>
+            </div>
+            <div class="banner-image">
+                <img class="bannerman" src="../Assets/BannerMan.png" alt="Man"
+                    />
+            </div>
+        </div>
+
+        <!-- Container for all elements other than banner -->
+        <div class="container">
+
+            <!-- Container for the latest blogs section -->
+            <div class="latest-blogs">
+                <div class="blogHeader">
+                    <h1 class="latestblogsTitle">Latest Blogs</h1>
+                    <button class="blogheaderButton explore-button">View All</button>
+                </div>
+                <div class="blogPosts">
+                    <div class="post">
+                        <div class="postImage">
+                            <img src="../Assets/Post1.png" />
+                            <div class="newtag">
+                                <img class="newTag_image"
+                                    src="../Assets/newTag.png" alt="New Tag" />
+                            </div>
+                        </div>
+
+                        <div class="postText">
+                            <h1 class="postHeading">Visiting my best friend's
+                                city for first time</h1>
+                            <p class="postDesc">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Nihil error modi repellendus consequuntur.
+                                Nobis ullam consectetur, consequatur.</p>
+                            <button class="explore-button postButton"> View
+                            </button>
+                        </div>
+                        <div class="postLine"></div>
+                        <div class="postHashtag">
+                            <p># Season 1</p>
+                            <p># Posted on Sep 3, 2020</p>
+                            <p># audio / goodbyes / life</p>
+
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="postImage">
+                            <img src="../Assets/Post2.png" />
+                            <div class="newtag hide">
+                                <img class="newTag_image"
+                                    src="../Assets/newTag.png" alt="New Tag" />
+                            </div>
+                        </div>
+                        <div class="postText">
+                            <h1 class="postHeading">An interesting read I
+                                definitely reccommend</h1>
+                            <p class="postDesc">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Nihil error modi repellendus consequuntur.
+                                Nobis ullam consectetur, consequatur.</p>
+                            <button class="explore-button postButton"> View
+                            </button>
+                        </div>
+                        <div class="postLine"></div>
+                        <div class="postHashtag">
+                            <p># Season 1</p>
+                            <p># Posted on Sep 3, 2020</p>
+                            <p># goodbyes / life</p>
+
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="postImage">
+                            <img src="../Assets/Post3.png" />
+                            <div class="newtag hide">
+                                <img class="newTag_image"
+                                    src="../Assets/newTag.png" alt="New Tag" />
+                            </div>
+                        </div>
+                        <div class="postText">
+                            <h1 class="postHeading">What if all my adventures go
+                                back home?</h1>
+                            <p class="postDesc">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Nihil error modi repellendus consequuntur.
+                                Nobis ullam consectetur, consequatur.</p>
+                            <button class="explore-button postButton"> View
+                            </button>
+                        </div>
+                        <div class="postLine"></div>
+                        <div class="postHashtag">
+                            <p># Season 1</p>
+                            <p># Posted on Sep 3, 2020</p>
+                            <p># audio / goodbyes </p>
+                        </div>
+                    </div>
+
+                    <!-- Hidden blogs container, revealed after clicking show more button -->
+                    <div id="hiddenblog" class="hide">
+                        <div class="post">
+                            <div class="postImage">
+                                <img src="../Assets/Post1.png" />
+
+                            </div>
+                            <div class="postText">
+                                <h1 class="postHeading">Visiting my best
+                                    friend's city for first time</h1>
+                                <p class="postDesc">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit.
+                                    Nihil error modi repellendus consequuntur.
+                                    Nobis ullam consectetur, consequatur.</p>
+                                <button class="explore-button postButton"> View
+                                </button>
+                            </div>
+                            <div class="postLine"></div>
+                            <div class="postHashtag">
+                                <p># Season 1</p>
+                                <p># Posted on Sep 3, 2020</p>
+                                <p># audio / goodbyes </p>
+                            </div>
+                        </div>
+
+                        <div class="post">
+                            <div class="postImage">
+                                <img src="../Assets/Post2.png" />
+                            </div>
+                            <div class="postText">
+                                <h1 class="postHeading">An interesting read I
+                                    definitely reccommend</h1>
+                                <p class="postDesc">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit.
+                                    Nihil error modi repellendus consequuntur.
+                                    Nobis ullam consectetur, consequatur.</p>
+                                <button class="explore-button postButton"> View
+                                </button>
+                            </div>
+                            <div class="postLine"></div>
+                            <div class="postHashtag">
+                                <p># Season 1</p>
+                                <p># Posted on Sep 3, 2020</p>
+                                <p># audio / goodbyes </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button id="show" onclick="ShowMoreBlogs()"
+                    class="explore-button showMore">Show More Episode</button>
+            </div>
+
+            <!-- Container for Blog Caraousel -->
+            <div class="blogslider-container">
+                <h1 class="blogs">
+                    Blog Posts
+                </h1>
+                <div class="section">
+                    <!-- Individual blog posts of the caraousel -->
+                    <div class="card">
+                        <div class="author-details">
+                            <div class="name_date">
+                                <h2 class="author_name">By Mehedi Hasan</h2>
+                                <p class="date" style="padding-left: 10px;
+                                    padding-top: 2px;">Sep 11, 2020</p>
+                                <p class="date" style="padding-top: 3px;">Cantonese
+                                    Radio</p>
+                            </div>
+                        </div>
+                        <h2 class="carousel_title">
+                            Global News Podcast Thai soldier kills many people a
+                            shooting rampage
+                        </h2>
+                        <p class="carousel_desc">
+                            Lorem ipsum dolor sit amet, consectetur sadipscing
+                            elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore...........
+                        </p>
+                        <button class="read_more">Read More</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="author-details">
+                            <div class="name_date">
+                                <h2 class="author_name">By Mehedi Hasan</h2>
+                                <p class="date" style="padding-left: 10px;
+                                    padding-top: 2px;">Sep 11, 2020</p>
+                                <p class="date" style="padding-top: 3px;">Cantonese
+                                    Radio</p>
+                            </div>
+                        </div>
+                        <h2 class="carousel_title">
+                            News Hour - World Health Organization says a new
+                            coronavirus cases
+                        </h2>
+                        <p class="carousel_desc">
+                            Lorem ipsum dolor sit amet, consectetur sadipscing
+                            elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore...........
+                        </p>
+                        <button class="read_more">Read More</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="author-details">
+                            <div class="name_date">
+                                <h2 class="author_name">By Mehedi Hasan</h2>
+                                <p class="date" style="padding-left: 10px;
+                                    padding-top: 2px;">Sep 11, 2020</p>
+                                <p class="date" style="padding-top: 3px;">Cantonese
+                                    Radio</p>
+                            </div>
+                        </div>
+                        <h2 class="carousel_title">
+                            Over to you - Programme face the axe substancial
+                            financial cutbacks
+                        </h2>
+                        <p class="carousel_desc">
+                            Lorem ipsum dolor sit amet, consectetur sadipscing
+                            elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore...........
+                        </p>
+                        <button class="read_more">Read More</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="author-details">
+                            <div class="name_date">
+                                <h2 class="author_name">By Mehedi Hasan</h2>
+                                <p class="date" style="padding-left: 10px;
+                                    padding-top: 2px;">Sep 11, 2020</p>
+                                <p class="date" style="padding-top: 3px;">Cantonese
+                                    Radio</p>
+                            </div>
+                        </div>
+                        <h2 class="carousel_title">
+                            Global News Podcast Thai soldier kills many people a
+                            shooting rampage
+                        </h2>
+                        <p class="carousel_desc">
+                            Lorem ipsum dolor sit amet, consectetur sadipscing
+                            elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore...........
+                        </p>
+                        <button class="read_more">Read More</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="author-details">
+                            <div class="name_date">
+                                <h2 class="author_name">By Mehedi Hasan</h2>
+                                <p class="date" style="padding-left: 10px;
+                                    padding-top: 2px;">Sep 11, 2020</p>
+                                <p class="date" style="padding-top: 3px;">Cantonese
+                                    Radio</p>
+                            </div>
+                        </div>
+                        <h2 class="carousel_title">
+                            News Hour - World Health Organization says a new
+                            coronavirus cases
+                        </h2>
+                        <p class="carousel_desc">
+                            Lorem ipsum dolor sit amet, consectetur sadipscing
+                            elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore...........
+                        </p>
+                        <button class="read_more">Read More</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="author-details">
+                            <div class="name_date">
+                                <h2 class="author_name">By Mehedi Hasan</h2>
+                                <p class="date" style="padding-left: 10px;
+                                    padding-top: 2px;">Sep 11, 2020</p>
+                                <p class="date" style="padding-top: 3px;">Cantonese
+                                    Radio</p>
+                            </div>
+                        </div>
+                        <h2 class="carousel_title">
+                            Over to you - Programme face the axe substancial
+                            financial cutbacks
+                        </h2>
+                        <p class="carousel_desc">
+                            Lorem ipsum dolor sit amet, consectetur sadipscing
+                            elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore...........
+                        </p>
+                        <button class="read_more">Read More</button>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="author-details">
+                            <div class="name_date">
+                                <h2 class="author_name">By Mehedi Hasan</h2>
+                                <p class="date" style="padding-left: 10px;
+                                    padding-top: 2px;">Sep 11, 2020</p>
+                                <p class="date" style="padding-top: 3px;">Cantonese
+                                    Radio</p>
+                            </div>
+                        </div>
+                        <h2 class="carousel_title">
+                            Global News Podcast Thai soldier kills many people a
+                            shooting rampage
+                        </h2>
+                        <p class="carousel_desc">
+                            Lorem ipsum dolor sit amet, consectetur sadipscing
+                            elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore...........
+                        </p>
+                        <button class="read_more">Read More</button>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="author-details">
+                            <div class="name_date">
+                                <h2 class="author_name">By Mehedi Hasan</h2>
+                                <p class="date" style="padding-left: 10px;
+                                    padding-top: 2px;">Sep 11, 2020</p>
+                                <p class="date" style="padding-top: 3px;">Cantonese
+                                    Radio</p>
+                            </div>
+                        </div>
+                        <h2 class="carousel_title">
+                            News Hour - World Health Organization says a new
+                            coronavirus cases
+                        </h2>
+                        <p class="carousel_desc">
+                            Lorem ipsum dolor sit amet, consectetur sadipscing
+                            elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore...........
+                        </p>
+                        <button class="read_more">Read More</button>
+
+                    </div>
+                </div>
+
+                <!-- Arrows to operate the carousel -->
+                <div class="pagination">
+                    <p>
+                        <span class="leftA"><img src="../Assets/arrow-left.png"
+                                id="leftArrow" /></span>
+                        <span class="rightA"><img
+                                src="../Assets/arrow-right.png" id="rightArrow"
+                                style="margin-left:15px;" /></span>
+
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Container to display the Instagram Feed -->
+            <div class="blogslider-container instagramFeed">
+                <h1 class="blogs">Instagram feeds</h1>
+                <div class="gallery">
+                    <div class="col">
+                        <a class="anchortag" href="https://www.instagram.com"><img src="../Assets/1.png" class="feedImage" /></a>
+                        <a class="anchortag" href="https://www.instagram.com"><img src="../Assets/2.png" class="feedImage" /></a>
+                        <a class="anchortag" href="https://www.instagram.com"><img src="../Assets/3.png" class="feedImage" /></a>
+                    </div>
+                    <div class="col">
+                        <a class="anchortag" href="https://www.instagram.com"><img src="../Assets/4.png" class="feedImage" /></a>
+                        <a class="anchortag" href="https://www.instagram.com"><img src="../Assets/5.png" class="feedImage" /></a>
+                    </div>
+                    <div class="col">
+                        <a class="anchortag" href="https://www.instagram.com"><img src="../Assets/6.png" class="feedImage" /></a>
+                        <a class="anchortag" href="https://www.instagram.com"><img src="../Assets/7.png" class="feedImage" /></a>
+                        <a class="anchortag" href="https://www.instagram.com"><img src="../Assets/8.png" class="feedImage" /></a>
+                    </div>
+                    <div class="col">
+                        <a class="anchortag" href="https://www.instagram.com"><img src="../Assets/9.png" class="feedImage" /></a>
+                        <a class="anchortag" href="https://www.instagram.com"><img src="../Assets/10.png" class="feedImage" /></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Container to display the add email to Subscribe option  -->
+            <div id="subscribe-container" class="blogslider-container
+                subscribe-container">
+                <h1 class="blogs subscribe-title">New Blog Every Week!</h1>
+                <p class="postDesc subscribe-desc">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dolorem necessitatibus neque
+                    sunt dignissimos aliquid quam fugiat.</p>
+                <div class="subscribe-email">
+                    <input type="email" placeholder="Type Your Email"
+                        class="emailInput" />
+                    <button class="subscribe-button explore-button"
+                        onclick="validate(`acbnishbghiasjb`)">Subscribe<p
+                            class="subscribe-arrow">&#129122;</p></button>
+                </div>
+
+            </div>
+
+            <!-- Footer Container -->
+            <div class="blogslider-container footer-container">
+
+                <div class="footer-content">
+
+                    <div class="logoSocials">
+                        <div class="logoFooter">
+                            <img src="../Assets/Mic.png" />
+                            <img src="../Assets/JTGPOD-Logo.png" />
+                        </div>
+                        <p class="postDesc footer-desc">Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit. Omnis, quaerat
+                            officia nulla.</p>
+                        <h3 style="margin-top: 8px; color: #393939;">Socials</h3>
+                        <div class="socialmedia-logo">
+                            <a href="https://www.facebook.com/LifeAtJosh/"><div
+                                    class="facebook"><img
+                                        src="../Assets/facebook.png" /></div></a>
+                            <a
+                                href="https://www.linkedin.com/company/josh-technology-group/"><div
+                                    class="facebook linkedin"><img
+                                        src="../Assets/linkedin.png" /></div></a>
+                            <a
+                                href="https://www.instagram.com/explore/locations/1018302459/josh-technology-group/?hl=en"><div
+                                    class="facebook instagram"><img
+                                        src="../Assets/instagram.png" /></div></a>
+                        </div>
+                    </div>
+
+
+                    <div class="pages">
+                        <div class="footer-title">
+                            <h3 class="titlefooter">Pages</h3>
+                        </div>
+                        <div class="links">
+                            <p class="pageslinks">About</p>
+                            <p class="pageslinks">Episode</p>
+                            <p class="pageslinks">Blog</p>
+                            <p class="pageslinks">Contact</p>
+                        </div>
+                    </div>
+
+                    <div class="recentBlogs">
+                        <div class="footer-title">
+                            <h3 class="titlefooter">Recent Blogs</h3>
+                        </div>
+                        <div class="links">
+                            <p class="pageslinks">Blog 1</p>
+                            <p class="pageslinks">Blog 2</p>
+                            <p class="pageslinks">Blog 3</p>
+                            <p class="pageslinks">Blog 4</p>
+                        </div>
+                    </div>
+
+                    <div class="partners">
+                        <div class="footer-title">
+                            <h3 class="titlefooter">Partners</h3>
+                        </div>
+                        <div class="podcasts">
+                            <img class="googleapple" src="../Assets/Google.png"
+                                />
+                            <img class="googleapple" src="../Assets/Apple.png"
+                                />
+                            <img class="spotify" src="../Assets/Spotify.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-line"></div>
+                <div class="footer-trademark">
+                    <p class="trademark">@2020 Josh Technology Group</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script type='text/javascript' src="script.js"></script>
+    </body>
+</html>
